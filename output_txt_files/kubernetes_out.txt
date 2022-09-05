@@ -1,0 +1,8 @@
+(.devops) PS C:\Users\katsap\workspaces\DevOps_Microservices> kubectl create deployment microservice --image=panteliskats/model_data_docker:latest       
+deployment.apps/microservice created
+(.devops) PS C:\Users\katsap\workspaces\DevOps_Microservices> kubectl get pods
+NAME                            READY   STATUS    RESTARTS   AGE
+microservice-665cc4d5fb-v429w   1/1     Running   0          7s
+(.devops) PS C:\Users\katsap\workspaces\DevOps_Microservices> kubectl port-forward deployment.apps/microservice --address 0.0.0.0 8000:80
+Forwarding from 0.0.0.0:8000 -> 80
+Handling connection for 8000
