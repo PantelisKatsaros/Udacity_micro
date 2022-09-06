@@ -19,4 +19,3 @@ kubectl get pods
 # Step 4:
 # Forward the container port to a host
 kubectl port-forward deployment.apps/microservice --address 0.0.0.0 8000:80
-
